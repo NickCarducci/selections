@@ -1,7 +1,3 @@
-live coding https://codesandbox.io/s/recursing-paper-4vosh
-
-![alt text](https://www.dl.dropboxusercontent.com/s/9oci4efa4zsh90q/Thumbprint_logo.png?dl=0 "Thumbprint.us - Social Calendar and more!")
-
 UNLICENSED
 Please do not redistribute except to steal code strategy; Copyrights reserved.
 
@@ -50,3 +46,4 @@ updates will be guaranteed by the myself/community and my intent is true to publ
 
 DESCRIPTION(edit here)
 This app/(package) is for thumbprint and does/(doesn't) claim copyright of that
+
