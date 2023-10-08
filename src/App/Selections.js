@@ -18,6 +18,7 @@ import {
 } from "firebase/storage";
 import { deleteField } from "firebase/firestore";
 import { arrayUnion } from "firebase/firestore";
+import { arrayRemove } from "firebase/firestore";
 
 const firestore = getFirestore(firebase);
 
@@ -45,6 +46,26 @@ class Selection extends React.Component {
     return (
       <div>
         {selection.charAt(0).toUpperCase() + selection.slice(1)}
+        <div
+          onClick={() => {
+            const answer = window.confirm("Delete selection?");
+            answer &&
+              updateDoc(
+                doc(firestore, "properties", this.props.chosenProperty),
+                {
+                  selections: arrayRemove(this.props.selection)
+                }
+              );
+          }}
+          style={{
+            height: "min-content",
+            width: "30px",
+            textAlign: "center",
+            border: "2px solid"
+          }}
+        >
+          &times;
+        </div>
         <div style={{ display: "block" }}>
           {this.state[selection].map((opt) => {
             return (
