@@ -1,14 +1,11 @@
 {
   "name": "selections",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "for home contractors",
+  "keywords": ["construction"],
   "main": "src/index.js",
   "license": "UNLICENSED",
   "dependencies": {
-    "@stripe/react-stripe-js": "2.1.2",
-    "@stripe/stripe-js": "2.1.0",
-    "dayjs": "1.11.8",
     "exenv": "^1.2.2",
     "firebase": "9.14.0",
     "pouchdb": "^7.2.2",
@@ -18,7 +15,6 @@
     "react-phone-number-input": "3.1.8",
     "react-router-dom": "6.12.0",
     "scriptjs": "2.5.9",
-    "stripe": "^8.121.0",
     "ua-parser-js": "1.0.2"
   },
   "devDependencies": {
@@ -28,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NickCarducci/vaults.biz"
+    "url": "https://github.com/NickCarducci/selections"
   },
   "scripts": {
     "restart": "rm -rf util/util.js && rm -rf .cache && rm -rf /node_modules && react-scripts start",
@@ -39,18 +35,10 @@
   },
   "false": {
     "note": "not without a docket",
-    "browserslist": [
-      ">0.2%",
-      "not dead",
-      "not ie <= 11",
-      "not op_mini all"
-    ]
+    "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
   },
   "browser": {
     "crypto": false
   },
-  "browserslist": [
-    "defaults",
-    "not ie 11"
-  ]
+  "browserslist": ["defaults", "not ie 11"]
 }
