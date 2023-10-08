@@ -92,7 +92,13 @@ class View extends React.Component {
       <div>
         {this.state.property ? this.state.property.name : "nothing here"}
         {this.state.property &&
-          selections.map((selection) => (
+          [
+            "trim",
+            "siding",
+            ...(this.state.property.selections
+              ? this.state.property.selections
+              : [])
+          ].map((selection) => (
             <Trim
               key={selection}
               selection={selection}
